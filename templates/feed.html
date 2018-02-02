@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Feed</title>
+    <link href="{{url_for('static', filename='css/StyleSheet.css')}}" rel="Stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <style>
+    .good{
+      height: 150px;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+<ul id="bar">
+  <li class="bari"><a href="{{url_for('index')}}">Home</a></li>
+  <li class="bari"><a class="active" href="{{url_for('feed')}}">Feed</a></li>
+  <li class="bari"><a href="{{url_for('post')}}">Post</a></li>
+  <li class="bari"><a href="{{url_for('about')}}">About</a></li>
+  <li class="login"><a href="{{url_for('login')}}">login</a></li>
+  <li class="login"><a href="{{url_for('signin')}}">Signin</a></li>
+</ul>
+
+<h1 style="color: white; text-align: center">Check Out What's New!</h1>
+
+<div class="good" style="width: 600px;height: 450px;">
+  
+</div>
+</body>
+</html>

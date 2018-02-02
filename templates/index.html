@@ -1,0 +1,29 @@
+﻿<!doctype html>
+
+<!-- <html xmlns="http://www.w3.org/1999/xhtml">
+ --><html>
+<head>
+    <title>TrailShare</title>
+    <link href="{{url_for('static', filename='css/StyleSheet.css')}}" rel="Stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <script type="text/javascript" src="static/javascript.js"></script>
+</head>
+<body>
+
+<ul id="bar">
+  <li class="bari"><a class="active" href="{{url_for('index')}}">Home</a></li>
+  <li class="bari"><a href="{{url_for('feed')}}">Feed</a></li>
+  <li class="bari"><a href="{{url_for('post')}}">Post</a></li>
+  <li class="bari"><a href="{{url_for('about')}}">About</a></li>
+  <li class="login"><a href="{{url_for('login')}}">login</a></li>
+  <li class="login"><a href="{{url_for('signin')}}">Signin</a></li>
+</ul>
+
+<h1 style="text-align:center; color:white">TRAILSHARE</h1>
+
+<div class="good">
+<p style="font-size:40px;text-align: center;">Welcome to TrailShare, here you can share your outdoors trips and let others know about all the beautiful trails there are!</p>
+<h3>still don't have an account? join <a href="/signin">here</a></h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>post</title>
+    <link href="{{url_for('static', filename='css/StyleSheet.css')}}" rel="Stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+ <title>Post</title>
+</head>
+<body>
+<ul id="bar">
+  <li class="bari"><a href="{{url_for('index')}}">Home</a></li>
+  <li class="bari"><a href="{{url_for('feed')}}">Feed</a></li>
+  <li class="bari"><a class="active" href="{{url_for('post')}}">Post</a></li>
+  <li class="bari"><a href="{{url_for('about')}}">About</a></li>
+  <li class="login"><a href="{{url_for('login')}}">login</a></li>
+  <li class="login"><a href="{{url_for('signin')}}">Signin</a></li>
+</ul>  
+<h1 style="color: white; text-align: center;">Share your trail plan!</h1>
+<form>
+<ul class="form-style-1">
+    <li><label>Name Your Trip<span class="required">*</span></label><input type="text" name="field1" class="field-divided" required="oops" />
+    <li>
+        <label>UserName <span class="required">*</span></label>
+        <input type="text" name="field3" class="field-long" required="oops" />
+    </li>
+    <li><label>Trip Location<span class="required">*</span></label><input type="text" name="field1" class="field-divided" required="oops" />
+    <li>
+    <li>
+        <label>Kind of Trip</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Hiking</option>
+        <option value="Partnership">Bicycle</option>
+        <option value="General Question">Roadtrip</option>
+        </select>
+    </li>
+    <li>
+        <label>Your Message <span class="required">*</span></label>
+        <textarea name="field5" id="field5" class="field-long field-textarea" required="oops"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+</ul>
+</form>
+</body>
+</html>
